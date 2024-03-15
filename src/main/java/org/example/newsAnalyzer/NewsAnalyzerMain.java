@@ -1,11 +1,8 @@
 package org.example.newsAnalyzer;
 
-
 import org.example.util.ClientHandler;
 import org.example.util.ReportTask;
-
 import java.util.Timer;
-
 
 public class NewsAnalyzerMain {
     public static void main(String[] args) {

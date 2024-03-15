@@ -9,7 +9,6 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class ClientHandler implements Runnable{
-
     private static final int port = 11111;
 
     @Override
@@ -23,7 +22,6 @@ public class ClientHandler implements Runnable{
                 NewsItem receivedNewsItem = (NewsItem) inputStream.readObject();
                 NewsAnalyzer.newsItemReceived(receivedNewsItem);
             }
-
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
